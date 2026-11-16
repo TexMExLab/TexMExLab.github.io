@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Research · TexMEX</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<canvas id="stars"></canvas>
+<header class="nav"><div class="wrap">
+  <a class="brand" href="index.html"><span class="orb"></span>TEXMEX</a>
+  <nav><ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a class="active" href="research.html">Research</a></li>
+    <li><a href="members.html">Group Members</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="outreach.html">Outreach</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul></nav>
+</div></header>
+
+<main class="wrap">
+<section class="page-hero">
+  <div class="eyebrow">Research</div>
+  <h1>From the <span class="grad">Big Bang</span> to the Milky Way.</h1>
+  <p>Our work spans experimental cosmology, astrophysical instrumentation, polarimetry and data analysis, with a focus on the cosmic microwave background (CMB), interstellar dust and cryogenic technology.</p>
+  <div><span class="tag hot">Cosmic Microwave Background</span><span class="tag hot">Polarimetry</span><span class="tag">Interstellar Medium</span><span class="tag">Dust</span><span class="tag">Cryogenics</span><span class="tag">Balloon-borne telescopes</span><span class="tag">Data analysis</span></div>
+</section>
+
+<section class="feature" id="so">
+  <div>
+    <span class="tag hot">Ground-based · Atacama, Chile</span>
+    <h2 style="margin-top:.3em">Simons Observatory</h2>
+    <p>The Simons Observatory (SO) is a suite of CMB telescopes observing since 2023 from the Chilean Atacama Desert at over 5,000 m. Our group is part of the collaboration and builds on experience designing, building and testing the SO small aperture telescopes (SATs), which search for the faint signature of primordial gravitational waves in CMB polarization.</p>
+    <p>Together with the Large Aperture Telescope, SO will constrain inflation, the sum of neutrino masses, dark energy and the growth of cosmic structure.</p>
+    <p>Group members are primarily involved in characterization and mitigation of systematic effects for both the SATs and the Large Aperture Telescope (LAT).</p>
+    <p><a href="https://www.simonsobservatory.org/">simonsobservatory.org ↗</a></p>
+  </div>
+  <div class="art"><img src="images/SAT_1.jpg" alt="SAT Telescope" width="400" height="300"></div>
+</section>
+
+<section class="feature rev" id="blast">
+  <div>
+    <span class="tag hot">Balloon-borne · Antarctica &amp; stratosphere</span>
+    <h2 style="margin-top:.3em">BLAST-TNG &amp; BLAST Observatory</h2>
+    <p>The Balloon-borne Large Aperture Submillimeter Telescope (BLAST-TNG) maps polarized dust emission across the Milky Way, revealing how magnetic fields shape the interstellar medium and regulate star formation. It flew from Antarctica in December 2018.</p>
+    <p>The next step is the BLAST Observatory or DUST SPRITE: a slightly smaller instrument at higher frequencies, designed for long-duration flights on NASA super-pressure balloons.</p>
+    <p><a href="https://sites.northwestern.edu/blast/">BLAST collaboration ↗</a></p>
+  </div>
+  <div class="art"><img src="images/BLAST_TNG_1.png" alt="BLAST TNG balloon-borne telescope" width="400" height="300"></div>
+  
+</section>
+
+<section id="tech">
+  <h2>Instrumentation &amp; analysis</h2>
+  <div class="grid">
+    <div class="card"><h3>Cryogenics</h3><p>Dilution refrigerators, pulse-tube coolers and thermal design to take detectors to ~100 mK.</p></div>
+    <div class="card"><h3>Polarimetry</h3><p>Half-wave plates, optics and calibration strategies to separate faint polarized signals from systematics.</p></div>
+    <div class="card"><h3>Detectors &amp; readout</h3><p>Superconducting transition-edge sensors and multiplexed readout for thousands of pixels.</p></div>
+    <div class="card"><h3>Data analysis</h3><p>Map-making, foreground separation and power-spectrum estimation, from timestream to cosmology.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Resources for new students</h2>
+  <div class="grid">
+    <a class="card" href="https://sites.google.com/cmb-s4.org/summer-school-2021/home"><h3>CMB Summer School 2021</h3><p>Lectures and materials</p></a>
+    <a class="card" href="https://github.com/CMB-S4/CMBAnalysis_SummerSchool"><h3>Analysis notebooks</h3><p>Hands-on CMB analysis on GitHub</p></a>
+    <a class="card" href="https://camb.info/"><h3>CAMB</h3><p>Boltzmann code for CMB spectra</p></a>
+    <a class="card" href="https://gabrielemontefalcone.com/CMBverse/"><h3>CMBverse</h3><p>Interactive visualization by a UT graduate student</p></a>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>© 2026 TexMEX Experimental Cosmology · The University of Texas at Austin</span><span>2515 Speedway, Austin, TX 78712</span></div></footer>
+<script src="assets/stars.js"></script>
+</body>
+</html>

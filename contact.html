@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact · TexMEX</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<canvas id="stars"></canvas>
+<header class="nav"><div class="wrap">
+  <a class="brand" href="index.html"><span class="orb"></span>TEXMEX</a>
+  <nav><ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="members.html">Group Members</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="outreach.html">Outreach</a></li>
+    <li><a class="active" href="contact.html">Contact</a></li>
+  </ul></nav>
+</div></header>
+
+<main class="wrap">
+<section class="page-hero">
+  <div class="eyebrow">Contact</div>
+  <h1>Send a <span class="grad">signal</span>.</h1>
+  <p>Questions, collaborations, press, or interested in joining the group? We'd love to hear from you.</p>
+</section>
+
+<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr));margin-top:30px">
+  <div class="card">
+    <h3>Reach us</h3>
+    <p><b>Prof. Nicholas Galitzki</b><br>Assistant Professor<br>The University of Texas at Austin<br>2515 Speedway<br>Austin, TX 78712</p>
+    <p><a href="mailto:ngalitzki@utexas.edu">ngalitzki@utexas.edu</a></p>
+    <p><a href="https://www.ngalitzki.com/">ngalitzki.com</a> · <a href="https://github.com/ngalitzki">GitHub</a> · <a href="https://twitter.com/astrodrnick">Twitter</a></p>
+    <h3 style="margin-top:20px">Prospective members</h3>
+    <p>Graduate students: apply through the UT Austin Physics or Astronomy program and mention our group. Undergraduates and postdocs: email with a short note about your interests and your CV.</p>
+  </div>
+  <div class="card">
+    <h3>Message</h3>
+    <!-- Opens the visitor's email client; no server needed. -->
+    <form id="f">
+      <div><label for="n">Name</label><input id="n" required></div>
+      <div><label for="s">Topic</label><select id="s"><option>Joining the group</option><option>Collaboration</option><option>Outreach / speaking</option><option>Press</option><option>Other</option></select></div>
+      <div><label for="m">Message</label><textarea id="m" rows="5" required></textarea></div>
+      <button class="btn primary" type="submit">Open in email app</button>
+    </form>
+  </div>
+</div>
+</main>
+
+<footer><div class="wrap"><span>© 2026 TexMEX Experimental Cosmology · The University of Texas at Austin</span><span>2515 Speedway, Austin, TX 78712</span></div></footer>
+<script src="assets/stars.js"></script>
+<script>
+document.getElementById('f').addEventListener('submit',e=>{
+  e.preventDefault();
+  const g=id=>document.getElementById(id).value;
+  location.href='mailto:ngalitzki@utexas.edu?subject='+encodeURIComponent('[TexMEX] '+g('s'))+'&body='+encodeURIComponent(g('m')+'\n\n— '+g('n'));
+});
+</script>
+</body>
+</html>
